@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %}Call (704)723-3455{% endblock %}
+
+{% block body %}
+  <ul>
+  {% for user in users %}
+    <li><a href="{{ user.url }}">{{ user.username }}</a></li>
+  {% endfor %}
+  </ul>
+{% endblock %}
