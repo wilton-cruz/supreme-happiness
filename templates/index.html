@@ -1,10 +1,42 @@
 {% extends "layout.html" %}
 {% block title %}Call (704)723-3455{% endblock %}
 
-{% block body %}
-  <ul>
-  {% for user in users %}
-    <li><a href="{{ user.url }}">{{ user.username }}</a></li>
-  {% endfor %}
-  </ul>
+{% block content %}
+<article class="mw10 center ph3 ph5-ns tc br2 pv6 bg-washed-red blue mb5">
+  <h1 class="fw6 f3 f2-ns lh-title mt0 mb3">
+    This is a tagline. For x.
+  </h1>
+  <h2 class="fw2 f4 lh-copy mt0 mb3">
+    This will change things. And we want you to be involved. This text needs to
+    be longer for testing sake.
+  </h2>
+  <p class="fw1 f5 mt0 mb3">
+    Sign up for beta access or learn more about x.
+  </p>
+  <div>
+    <a class="f6 br-pill bg-dark-blue no-underline washed-blue ba b--dark-blue grow pv2 ph3 dib mr3"
+      href="#">
+      Sign Up
+    </a>
+    <a class="f6 br-pill dark-blue no-underline ba grow pv2 ph3 dib"
+      href="#">
+      Learn More
+    </a>
+  </div>
+</article>
+
+<section class="w-50-ns w-90-m center pt4">
+    <blockquote class="athelas ml0 mt0 pl4 black-90 bl bw2 b--blue">
+      <p class="f5 f4-m f3-l lh-copy measure mt0">
+        Discipline in typography is a prime virtue. Individuality
+        must be secured by means that are rational. Distinction
+        needs to be won by simplicity and restraint. It is equally
+        true that these qualities need to be infused wiht a
+        certain spirit and vitality, or they degenerate into
+        dullness and mediocrity.
+      </p>
+      <cite class="f6 ttu tracked fs-normal">―Javier Peralta</cite>
+    </blockquote>  
+</section>
+
 {% endblock %}

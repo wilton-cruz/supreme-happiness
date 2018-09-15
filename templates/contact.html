@@ -1,10 +1,7 @@
 {% extends "layout.html" %}
 {% block title %}Contact{% endblock %}
 
-{% block body %}
-  <ul>
-  {% for user in users %}
-    <li><a href="{{ user.url }}">{{ user.username }}</a></li>
-  {% endfor %}
-  </ul>
+
+{% block content %}
+<h1>Hello contact.</h1>
 {% endblock %}
