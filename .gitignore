@@ -1,5 +1,5 @@
 __pycache__/*
 .vscode/*
-**/venv/*
+# **/venv/*
 # https://help.github.com/articles/ignoring-files/
 # git rm --cached FILENAME (I needed to add -r after rm
