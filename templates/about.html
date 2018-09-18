@@ -1,12 +1,10 @@
 {% extends "layout.html" %}
 {% block title %}About{% endblock %}
 
-{% block body %}
-  <ul>
-  {% for user in users %}
-    <li><a href="{{ user.url }}">{{ user.username }}</a></li>
-  {% endfor %}
-  </ul>
+{% block content %}
+<section class="w-60 center flex items-center">
+  <img class="center br-100 b--dashed b--gray bw2" src="{{ url_for('static', filename='img/avatar.png') }}" alt="avatar image" width="300" height="300">
+</section>
 {% endblock %}
 
 

@@ -2,25 +2,22 @@
 {% block title %}Call (704)723-3455{% endblock %}
 
 {% block content %}
-<article class="mw10 center ph3 ph5-ns tc br2 pv6 bg-washed-red blue mb5">
-  <h1 class="fw6 f3 f2-ns lh-title mt0 mb3">
-    This is a tagline. For x.
+<article class="mw10 ph3 ph5-ns tc br2 pv6 bg-washed-red blue mb5">
+  <h1 class="fw8 f1 f2-ns lh-title mt0 mb3">
+    Building Solutions for Home Owners.<br>
+and Commercial Business.
   </h1>
   <h2 class="fw2 f4 lh-copy mt0 mb3">
     This will change things. And we want you to be involved. This text needs to
     be longer for testing sake.
   </h2>
   <p class="fw1 f5 mt0 mb3">
-    Sign up for beta access or learn more about x.
+    to see some of my work.
   </p>
   <div>
-    <a class="f6 br-pill bg-dark-blue no-underline washed-blue ba b--dark-blue grow pv2 ph3 dib mr3"
-      href="#">
-      Sign Up
-    </a>
     <a class="f6 br-pill dark-blue no-underline ba grow pv2 ph3 dib"
-      href="#">
-      Learn More
+      href="{{ url_for('work')}}">
+      See my work
     </a>
   </div>
 </article>
@@ -39,18 +36,34 @@
     </blockquote>  
 </section>
 
-<section class="w-70 w-90-m
-flex center pt6">
-  <div class="flex items-center flex-wrap-m bt b--black-20 pt4">
-          <img class="fence1" src="https://images.unsplash.com/photo-1529506711032-973f0b98912b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d80cd20853b1e86b066ff733dc33fadb&auto=format&fit=crop&w=634&q=80" alt="Residential fence">
-      <div class="pl4">
-          <h1>Residential Fencing.</h1>
-          <p>Discipline in typography is a prime virtue. Individuality
+<section class="w-80-ns w-95-m center pt6">
+  <div class="flex flex-wrap-m items-center bt b--black-20 pa6-ns pa3-m">
+      <img class="w-100" src="{{ url_for('static', filename='img/fence1.JPG') }}" alt="Residential fence">
+      <div class="pb3-m pt4-m pa3-ns w-100">
+          <h1 class="f1 f-headline lh-solid">Residential Fencing.</h1>
+          <p class="f4 lh-copy">Discipline in typography is a prime virtue. Individuality
               must be secured by means that are rational. Distinction
               needs to be won by simplicity and restraint.</p>
         </div>
     </div>
+
+    <div class="flex flex-wrap-m flex-wrap-reverse-m items-center bt b--black-20 pa6-ns pa3-m">
+      <div class="pt4-m pb4-m mt3-m pa3-ns w-100">
+          <h1 class="f1 f-headline lh-solid">Residential Fencing.</h1>
+          <p class="f4 lh-copy">Discipline in typography is a prime virtue. Individuality
+              must be secured by means that are rational. Distinction
+              needs to be won by simplicity and restraint.</p>
+      </div>
+      <img class="w-100" src="{{ url_for('static', filename='img/fence1.JPG') }}" alt="Residential fence">
+    </div>
 </section>
+<header class="vh-100 bg-light-pink dt w-100">
+  <div class="dtc v-mid cover ph3 ph4-m ph5-l">
+    <h1 class="white f2 f-subheadline-l measure lh-title fw9">A Night Taking Photos at San Francisco’s Spooky Ruins of the Sutro Baths</h1>
+    <h2 class="white f6 fw6 black">A story by Nancy Drew</h2>
+  </div>
+
+</header>
 
 {% endblock %}
 
