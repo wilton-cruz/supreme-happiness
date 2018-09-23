@@ -2,9 +2,18 @@
 {% block title %}About{% endblock %}
 
 {% block content %}
-<section class="w-60 center flex items-center">
-  <img class="center br-100 b--dashed b--gray bw2" src="{{ url_for('static', filename='img/avatar.png') }}" alt="avatar image" width="300" height="300">
+<section class="pt5-ns w-100 flex flex-wrap flex-cloumn-ns items-center">
+  <img class="w-40-ns w-100-m h-25 center" src="{{ url_for('static', filename='img/family.jpg') }}" alt="avatar image">
+  <div class="pa2 w-40-ns w-80-m blue center">
+  <h1 class="f1 lh-title blue">meet the peralta's family</h1>
+  <p class="lh-copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eos minus laborum reprehenderit sunt quasi molestiae odio saepe maxime sint corrupti iusto dolores commodi voluptate, asperiores labore dolorem. Aperiam, ipsum.</p>
+</div>
 </section>
+
+<div>
+  <h1 f1 lh-title blue>Our History</h1>
+  <p lh-copy>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut at maiores, accusantium, provident fugit magnam delectus fuga cumque libero id consequuntur deleniti soluta incidunt voluptas sunt dignissimos ullam explicabo dolores pariatur facere, quisquam dolorum ipsum inventore quasi! Veniam, magnam esse.</p>
+</div>
 {% endblock %}
 
 
