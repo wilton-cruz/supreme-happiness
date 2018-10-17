@@ -2068,8 +2068,8 @@
   .br-pill-ns { border-radius: 9999px; }
   .br--bottom-ns { border-top-left-radius: 0; border-top-right-radius: 0; }
   .br--top-ns { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
-  .br--right-ns { border-top-left-radius: 0; border-bottom-left-radius: 0; }
-  .br--left-ns { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+  .br--right-ns { border-top-left-radius: 10px; border-bottom-left-radius: 10px; }
+  .br--left-ns { border-top-right-radius: 10px; border-bottom-right-radius: 10px; }
   .b--dotted-ns { border-style: dotted; }
   .b--dashed-ns { border-style: dashed; }
   .b--solid-ns { border-style: solid; }
