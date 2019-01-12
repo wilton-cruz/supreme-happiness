@@ -2,6 +2,7 @@
 from flask import Flask, render_template, url_for
 app = Flask(__name__)
 
+
 @app.route("/")
 def index():
     return render_template('index.html')
@@ -17,6 +18,10 @@ def work():
 @app.route("/contact/")
 def contact():
     return render_template('contact.html')
+
+@app.route("/privacy/")
+def privacy():
+    return render_template('privacy.html')
 
 @app.errorhandler(404)
 def page_not_found(error):
