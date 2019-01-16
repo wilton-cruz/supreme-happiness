@@ -3,17 +3,20 @@
   {% block head %}
   <title>{% block title %}{% endblock %} - J&H FENCE.</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% endblock %}
 </head>
 
 <nav class="b avenir mw10 tc pa3 pa4-ns">
 {% block nav %}
-  <a class="link dim navy b f6 f5-ns dib mr3" href="{{ url_for('index')}}" title="Home">J&H FENCE</a>
-  <a class="link dim navy    f6 f5-ns dib mr3" href="{{ url_for('index')}}" title="Home">Home</a>
-  <a class="link dim navy    f6 f5-ns dib mr3" href="{{ url_for('about')}}" title="About">About</a>
-  <a class="link dim navy    f6 f5-ns dib mr3" href="{{ url_for('work')}}" title="Store">Work</a>
-  <a class="link dim navy    f6 f5-ns dib" href="{{ url_for('contact')}}" title="Contact">Contact</a>
+<ul class="list pl0 flex justify-center items-center">
+  <li><a class="link dim navy b f6 f5-ns mr3" href="{{ url_for('index')}}" title="Home">J&H FENCE</a></li>
+  <li><a class="link dim navy    f6 f5-ns mr3" href="{{ url_for('index')}}" title="Home">Home</a></li>
+  <li><a class="link dim navy    f6 f5-ns mr3" href="{{ url_for('about')}}" title="About">About</a></li>
+  <li class=""><a class="link dim navy f6 f5-ns dib mr3" href="{{ url_for('work')}}" title="Store">Product</a></li>
+  <li><a class="link dim navy f6 f5-ns" href="{{ url_for('contact')}}" title="Contact">Contact</a></li>
+</ul>
 {% endblock nav%}
 </nav>
 
@@ -23,21 +26,27 @@
   <footer class="pa4 pa5-l mt4 navy bt b--black-10">
     {% block footer %}
     <div class="mb4-l cf">
-      <h1 class="fl w-100 pv0 f6 fw6 ttu tracked mb4">Fence type</h1>
+      <h1 class="fl w-100 pv0 f6 fw6 ttu tracked mb4">Fence Type and  Locations</h1>
       <article class="fl w-50 dib-ns w-auto-ns mr4-m mr5-l mb4 pr2 pr0-ns">
-        <h4 class="ttc f5 f4-l fw6">wood</h4>
-        <a class="ttc f7 fw6 db navy link dim" href="#0">boar on board</a>
-        <a class="ttc f7 fw6 db navy link dim" href="#0">boar on board</a>
+        <h4 class="ttc f5 f4-l fw6">Fencing</h4>
+        <a class="ttc f6 f5-l lh-copy fw6 db navy link dim" href="{{ url_for('vinyl') }}">viny fencing</a>
+        <a class="ttc f6 f5-l lh-copy fw6 db navy link dim" href="{{ url_for('farm') }}">farm fencing</a>
+        <a class="ttc f6 f5-l lh-copy fw6 db navy link dim" href="{{ url_for('residential') }}">residential fencing</a>
+        <a class="ttc f6 f5-l lh-copy fw6 db navy link dim" href="{{ url_for('aluminum') }}">aluminum fencing</a>
       </article>
       <article class="fl w-50 dib-ns w-auto-ns mr4-m mr5-l mb4 pl2 pl0-ns">
-        <h4 class="f5 f4-l fw6">Metal</h4>
-        <a class="ttc f7 f6-l fw6 db navy link dim" href="#0">boar on board</a>
-        <a class="ttc f7 f6-l fw6 db navy link dim" href="#0">boar on board</a>
+        <h4 class="f5 f4-l fw6">Cities We Serve</h4>
+
+        <a class="ttc f6 f5-l lh-copy fw6 db navy link dim" href="{{ url_for('kings') }}">kings mountain, nc</a>
+        <a class="ttc f6 f5-l lh-copy fw6 db navy link dim" href="{{ url_for('gastonia') }}">gastonia, nc</a>
+        <a class="ttc f6 f5-l lh-copy fw6 db navy link dim" href="{{ url_for('belmont') }}">belmont, nc</a>
+        <a class="ttc f6 f5-l lh-copy fw6 db navy link dim" href="{{ url_for('mountholly') }}">Mount Holly, nc</a>
+        <a class="ttc f6 f5-l lh-copy fw6 db navy link dim" href="{{ url_for('charlotte') }}">Charlotte, nc</a>
       </article>
     </div>
     <section class="cf mb5">
       <div class="mb4 mb0-ns w-100 w-50-l fr">
-        <a class="navy f4 f2-l fw6 tl link dim dib pv3 mt2 mb4 mb0-l" href="mailto:jandhfence@gmail.com" >jandhfence@gmail.com</a>
+        <a class="navy f3 f2-l fw6 tl link dim dib pv3 mt2 mb4 mb0-l" href="mailto:jandhfence@gmail.com" >jandhfence@gmail.com</a>
       </div>
       <div class="mb4 mb0-ns fl w-100 w-50-l" >
         <p class="f4 fw6 mb2 f6 mt0">

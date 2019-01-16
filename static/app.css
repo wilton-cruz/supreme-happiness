@@ -1858,6 +1858,7 @@
      <div class="child"> Hidden until hover or focus </div>
    </div>
  */
+/*
  .hide-child .child { opacity: 0; transition: opacity .15s ease-in; }
  .hide-child:hover  .child, .hide-child:focus  .child, .hide-child:active .child { opacity: 1; transition: opacity .15s ease-in; }
  .underline-hover:hover, .underline-hover:focus { text-decoration: underline; }
